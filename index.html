@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yash">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Yash Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><span>My</span>_Portfolio</div>
+        <nav class="nav-bar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+
+            <div class="home-cont">
+                <h3>Hello, It's Me</h3>
+                <h1>Yaswanth Kumar Karaka</h1>
+                
+                <h3>And Currently I'm a <span>
+                    Studying final year b-tech at Chaitanya Engineering College Visakhapatnam...
+                </span></h3>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/yaswanth-kumar-karaka-551b971b5/" ><i class='fa-brands fa-linkedin' ></i></a>
+                    
+                    <a href="https://instagram.com/_yash008_ "><i class='fa-brands fa-instagram'></i></a>
+
+                </div>
+
+            </div>
+            <div class="img">
+                <img src="IMG_20230814_215333-removebg-preview.png" alt="Yash Pic" class="yash-img">
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <div class="container">
+                       <h1 class="about-name">About Me</h1> 
+                       <p class="dis">To work in an organisation whre i can use my experience & skills in administration of facilities for the benefit of the organisation whilst improving my knowledge & experience.Bringing strong procurement,negotiation and inter personal skills.
+                       </p>
+                       <div class=" tab-titles">
+                        <p class="tab-link active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-link" onclick="openTab('Education')">Education</p>
+                        <p class="tab-link" onclick="openTab('certificates')">Certifications</p>
+                        
+                        <p class="tab-link" onclick="openTab('Projects')">Projects</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                 <li><span>Web-Design</span>
+                            </li>
+                            <li><span>Python</span></li>
+                            <li><span>AI/ML</span></li>
+                            
+                            <li><span>C</span></li>
+                            
+
+                            </ul>
+                       </div>
+                   <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>SECONDARY SCHOOL</span><br>Govt High School Pendurthi with 83%
+                        
+                            <li><span>DIPLOMA</span><br>Wellfare
+                                Institute of
+                                Science,
+                                Technology
+                                and
+                                Management-WISTM
+                                Visakhapatnam, in the brach of ECE with 78%</li>
+                        </li> 
+                        <li><span>BACHELOR OF TECHNOLOGY(final year)</span><br>Chaitanya
+                            Engineering
+                            College-CEC Visakhapatnam,in the brach of CSE with 65% (up to 4-1 sem)</li>
+                    </ul>
+               </div>
+                 <div class="tab-contents" id="certificates">
+                    <ul>
+                        
+                        <li><span>Responsive Web Desgin-freeCodeCamp <img src="certificate logo\free_code_camp_logo.jpg" alt="logo"></span><br>
+                            <a href="https://www.freecodecamp.org/certification/Yash008/responsive-web-design">Show credential 
+                                <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        
+                        </li>
+
+                        
+                        <li><span>SkillDzire logo
+                            Long-term Machine Learning internship- SkillDzire <img src="certificate logo/1630646806074.jpg" alt="logo"></span><br>
+                            <a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=4f43e0b535&attid=0.1&permmsgid=msg-f:1796651104629015997&th=18eefca91cb9c5bd&view=att&disp=inline&saddbat=ANGjdJ9acn4TTnnES4rF2jO2q1SZx8PeEnq7d3IstQsZmeCXm8s0XfkZam9HdUpXJ3waBwvU_c5uZ7yqnXx9dfXHE3NmvzK6PzHFfg7jYiM2VKfY6nBLZm_1pobhmizxmRK3MX67V2HptQXTXeislAjZmeyCUdZunmJX-og9imMHM9AFHwvWsk1B1pQluerkLa49-JiMFSR-EXpq0TOMsWWX29NME2m0DOavex_WE5uOOA3YNwlTZCj06LoP8_TlMcjkMqFh0CrcXoJQa9QfdCDGfd5w01Pb5mqTrn-XWSTkUOvymI8wiQOzfwBT6AqRsq6Hsayy7qQYxr7Z2W80srkbFA_zcChz1vsYH93PkrBVeEoqQLjgLuwkdcZlQJGdh2sVhnhgSlZ4yPFEVZGON7nwVzfflc-H4OpNjHwDESAF6FpH7fnoO86E1TzZw2558-grDKImVtSiR7Ybty2l7WxDg-H7qpEGAKZcpPF9p9C83PniVcM_eP8YoDXD0CCdVvbBy2i8tQNGWVsc7EoBjHOfq6nsuJsi7kKXhxnn0njgoUUqQR0y8EZUinZkbeWGcyBK2XfAPjWERaBm0YCxBGqQlN4AqFUUly0JHyFw1Er1W_-abfk4HkcWXm2EZAX0TGKNdGzLQZsrRRS-M6LhnFsTDl09C-CVmW6zxY7E3SP45pfQpPSJ3OX1JLJGsRWbb5LUEVt8aAIhnOKmuZqdJK1Pili1QaWGfbzRUcEO3Nt9L5QMmtX37yeDq-PyPFuWfu3x0lGi7lDLK8PiLpT21IsE-ZESNdTCyihikmVPHnLH4qi9E2U8wa-0QuQZE9qokj0x2-wwzoKbnMujBnYyYq69nJaU6m25aOAe8KHwNrOVIX98-gCav3YQjVFh0cpB67WoxGzRTop5vpcnrJqeKKOV68vCOin86zEvM8QwQTaE8wLiETyqdJxyJl22XVAu_0ETZEd1V7U2x4EAjdZoPk4ZfUs692rcY_inr4G0lKwBWU4uFr3P9aaBByPSEtqM4Y-yIqPX4SYfW7GwQLAJFYs7GXDc250kGA7NiFVigA">Show credential 
+                                <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        
+                        </li>
+                        
+                        <li><span>AI/ML for Geodata Analysis- ISRO <img src="certificate logo/1631302436292.jpg" alt="logo"></span><br>
+                            <a href="https://isrolms.iirs.gov.in/mod/customcert/view.php?id=4546&downloadown=1">Show credential 
+                                <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        
+                        </li>
+                        
+
+                        <li><span>1 Month Web Development Intership- CodersCave <img src="certificate logo/1675512082141.jpg" alt="logo"></span><br>
+                            <a href="https://certificate.givemycertificate.com/c/4362548e-1e25-4c16-95cf-cdeddcf37763">Show credential 
+                                <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        
+                        </li>
+                        
+                        <li><span>1 Month web Development Intership-Bharat Inter <img src="certificate logo/bharat_intern_logo.jpg" alt="logo"></span><br>
+                            <a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=4f43e0b535&attid=0.1&permmsgid=msg-f:1783397671194762072&th=18bfe6bbacd29b58&view=att&disp=inline&saddbat=ANGjdJ9z_NAL-eux5neSjn6aHlLwm-ujGbXpf7xdruRckqLysCbzUoKBel1ILz5ZNZBXGjeX1p11WP-2X4JFChnsrYeqTpTzIChxugqkWZf4gfTsAvaL8lScg49546FZt9fstMwTXKoOtl7NKG8_Di0X9D75cd2GnEMzekm-XAapcUMnY4RxqKO1kcSCWyPGMsFqebhMYPBoTrH_HCpUizPaVrEB6MWMBriBia8KddA2Ageo4oej-3m8lxqfD-vF1xLCLnkE9wdf5bpzxoEwrc_cz9NoS5RYhAKoyV2AuS0S1fcNSThqh6H_ZkdAVLPa1fzuLdjOA-K7OuoblaZGvG0PrTLxQJBYaa0U4YTjCqwz3JLVf3eoxL3wfq6o6vrGZ-2xHLUlq6OL1znwF4qEquaIg2f5qJzmrxdlEukcaOtCtDZn4Is1LM37Jh4MJXlbu7ZuzaaadjB4D7TUeiziORktF4O8aitKFxVOBgVkIqs_UJbfmZMI7-1k5AKZBxmXcVcwOpYaxhTnAM-WmqJrf9AiBDKV9jhpU5lMncQH4e25VkCW-wu7WmbrMX9Cs2DUgeYa8eLqjT8jrnNMsQthcviMkGbTphjOgi1wFdR9GXUs43qkB0aRvlTOShUcTL3Y0_LhbpWDFZW04yoH9VdLkzU1J1JTvflPp2s91Spma9u3TC2Ul7njYWUmSaP27Xit78hMk1BNwD8YoplqgiNjTsk9GSmW4_JiZjTePaeP-wdECtHSjy0u-M8E5g_QNvJW87I7xmLfnG2ez6yLD9gCAkUxCcLTCnNGQrQ2HfyNEOvTJbuUTioGEFColHHBqk3EYeY0OE1J6Ol9SfNHdkaiNwPAbd-hjU8Z36dVOT-ii-jc-6E3mmmTJhSYzsgUJrYB1cP3ElBsI2wh5DxG05xCl_Ck7QUlvvGG_m7uKW9lCTD4s8v2N5uzKMKIk9NzGWIgDwfi5MeT1bHRcj3QsmTfkPndDUAosPKju9O6biqNmpHckjR6x61mfRnFIgJ1JiE">Show credential <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+
+                            <li>
+                                <span>2 Months Web Development Intership- OctaNet Services Pvt Ltd.
+                                    OctaNet Services Pvt Ltd.  <img src="certificate logo/octanetsolutions_logo (1).jpg" alt="logo"></span><br>
+                                    <a href="https://certificate.givemycertificate.com/c/3f00daee-fe11-4057-8c48-7c4948c7e46a">Show credentail 
+                                        <i class="fa fa-external-link" aria-hidden="true"></i></a>
+
+                            </li>
+
+                            
+                            <li>
+                                <span>2 Months Python Development Intership- OctaNet Services Pvt Ltd.
+                                    OctaNet Services Pvt Ltd. <img src="certificate logo/octanetsolutions_logo (1).jpg" alt="logo"></span><br>
+                                    <a href="https://certificate.givemycertificate.com/c/3878879e-14ec-4097-8354-aa9d347fe06d">Show credentails 
+                                        <i class="fa fa-external-link" aria-hidden="true"></i></a>
+
+                            </li>
+                        
+                    </ul>
+               </div>
+               <div class="tab-contents" id="Projects">
+
+                <ul>  
+                    <li>
+                        <span>Portfolio Web site</span>
+                        <p>I designed and developed a personal portfolio website to showcase my skills, projects, and achievements as a student in BTECH(CSE) . The website serves as a digital resume, providing an interactive platform for potential employers and peers to learn more about my background and capabilities.</p>
+                    </li>
+                    <li>
+                        <span>
+                            AirCanvas using OpenCV
+                        </span>
+                        <p>Designed and implemented AirCanvas, a unique digital drawing application, as part of a collaborative project. The aim was to provide users with an innovative and intuitive platform for creating digital art
+                            using hand gestures in the air</p>
+                    </li>
+                <li>
+                    <span>
+                        Front-End Ecommerce web site
+                    </span>
+                    <p>As a front-end developer, I spearheaded the design and implementation of static and user-friendly E-commerce website using HTML, CSS, and JavaScript</p>
+                </li>
+
+                    <li>
+                        <span>
+                            Landing page web site
+                        </span>
+                        <p>
+                            Designed a responsive landing page using HTML,CSS,JS for [Client/Organization Name], aiming to enhance user engagement and drive conversions. The landing page served as the primary entry point for [product/service] promotion, capturing the essence of the brand and encouraging users to take specific actions 
+                        </p>
+                    </li>
+                </ul>
+                
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <div class="contact">
+                <div class="contact-details">
+                    <h1 class="contact-name">Contact Me</h1>
+                    <p><i class="far fa-envelope"></i>  karakayaswanth@gmail.com</p>
+                    <p> <i class="fas fa-phone-alt"></i>  +91-8106135118</p>
+                    <div class="social">
+                 <a href="https://www.linkedin.com/in/yaswanth-kumar-karaka-551b971b5/" ><i class='fa-brands fa-linkedin' ></i></a>
+                    
+                    <a href="https://instagram.com/_yash008_ "><i class='fa-brands fa-instagram'></i></a>
+
+                    </div>
+    
+                </div>
+            </div>
+
+        </section>
+    </main> 
+    <footer></footer>
+</body>
+</html>

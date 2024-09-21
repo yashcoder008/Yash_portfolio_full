@@ -1,0 +1,474 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Mukta&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+html
+{
+    
+    scroll-behavior: smooth;
+}
+
+body
+{
+
+    background-color:rgb(25, 25, 35) ;
+    color: #fff;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+main{
+    margin: 15px;
+}
+
+
+.logo
+{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+
+}
+.logo span
+{
+    color: #ef5b0bc6 ;
+}
+
+.nav-bar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+
+}
+
+.nav-bar a:hover,
+.nav-bar a.active
+{
+    color: #ef5b0bc6;
+}
+
+.home
+
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 70px 10% 0  ;
+    margin: 30px;
+
+}
+.home-cont
+{
+    max-width: 600px;
+}
+.main-img
+{
+    max-width: 500px;
+
+
+}
+
+.home-cont h3{
+    font-size: 32px;
+    font-weight: 700;
+
+
+}
+
+.home-cont h3 span
+{
+    color:#ef3c0bc6;
+}
+
+.home-cont h1{
+    font-size: 3rem;
+    font-weight: 700;
+
+
+}
+.home-cont h3:nth-of-type(2)
+{
+    margin-bottom: 20px;
+}
+
+.yash-img{
+
+    border:10px solid whitesmoke;
+    width: 350px;
+    height: 480px;
+    margin: 50px;
+    background-color: rgba(7, 179, 237, 0.923);
+    border-radius: 5px;;
+
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ef5b0bc6;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ef5b0bc6;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+
+}
+
+.social a:hover
+{
+    background: #ef5b0bc6;
+    color: #1f242d;
+}
+
+
+
+
+
+
+#about
+{
+    padding: 80px 0;
+    color: #fff;
+    margin-bottom: 150px;
+
+}
+
+.container
+{
+    height: 850px;    
+}
+
+.about-name,.title
+{
+    font-size: 50px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+
+    
+}
+.dis{
+    font-size: 1.4rem;
+}
+
+.tab-titles
+{
+    display:  flex;
+    margin: 20px 0 40px  ;
+
+}
+
+.tab-link
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 650;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ef5b0bc6;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5S;
+}
+
+.tab-link.active-link::after
+{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin:20px 0 ;
+    color: #FFF;
+    font-weight: 700;
+}
+.tab-contents ul li span{
+    color: #ef5b0bc6;
+    display: flex;
+    gap: 10px;
+    margin-bottom: -20px;
+}
+#certificates ul li span
+{
+    
+    margin-bottom: -30px;
+}
+
+
+.tab-contents ul li span img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.tab-contents ul li a{
+    text-decoration: none;
+    color: #ffffffd5;
+    font-size: 0.96rem;
+    margin-left: 15px;
+
+
+}
+
+.tab-contents ul li a:hover{
+    color:#ef3c0bc6;
+    
+
+}
+
+#Projects ul li span
+{
+    
+    margin-bottom: 0;
+}
+
+#Projects ul li p
+{
+    
+    font-size: 0.96rem;
+    margin-left: 20px;
+}
+.tab-contents
+{
+    display: none;
+}
+
+.tab-contents.active-tab
+{
+    display: block;
+}
+
+.contact
+{
+    height: 550px;
+    margin-right: 50px;
+}
+
+.contact p,div
+{
+    margin: 30px;
+    font-size: 26px;
+}
+
+
+.certi
+{
+    width: 240px;
+    margin:30px;
+    border: 2px solid #fff;
+}
+
+          
+  @media (max-width: 1000px) {
+    
+    
+    header
+    {
+        width: 60px;
+    }
+    header .nav-bar {
+        display: flex;
+        width: 30px;
+    }
+    header .nav-bar a
+    {
+        
+        font-size: 0.5rem;
+    }
+    .home
+    {
+        width: 50%;
+    }
+    .home-cont
+    {
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+    }
+    .home-cont h3
+    {
+        font-size: 1.3rem;
+    }
+    .home-cont h1
+    {
+        font-size: 2rem;
+    }
+    .social
+    {
+        display: flex;
+
+    }
+    .social a
+    {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    main
+    {
+        margin: 0;
+    }
+    .yash-img
+    {
+        width: 150px;
+        height: 250px;
+    }
+    .about{
+        width: 50%;
+    }
+    
+    .about-name
+    {
+        font-size: 1rem;
+        
+    }
+    .contact{
+        width: 50%;
+    }
+    .contact-name
+    {
+        font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    
+    .home-cont h3
+    {
+        font-size: 1.3rem;
+    }
+    .home-cont h1
+    {
+        font-size: 2rem;
+    }
+    .social
+    {
+        display: flex;
+
+    }
+    .social a
+    {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    .yash-img
+    {
+        width: 250px;
+        height: 350px;
+        margin: 0;
+    }
+    .about
+    {
+        width: 700PX;
+    }
+    .dis
+    {
+        
+        font-size: 1rem;
+    }
+    .about-name
+    {
+        font-size: 2rem;
+    }
+    .tab-contents
+    {
+        font-size: 1.2rem;
+    }
+    header .nav-bar a
+    {
+        
+        font-size: 1rem;
+    }
+  }
+  
+  
+  @media (max-width: 450px) {
+    .nav-bar a
+    {
+        margin: 10px;
+    }
+    .home-cont h3
+    {
+        font-size: 1rem;
+    }
+    .home-cont h1
+    {
+        font-size: 2rem;
+    }
+    .social
+    {
+        display: flex;
+
+    }
+    .social a
+    {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    .yash-img
+    {
+        width: 130px;
+        height: 200px;
+        margin: 0;
+    }
+    
+    .about-name
+    {
+        font-size: 2rem;
+    }
+    .about
+    {
+        width: 400px;
+    }
+    .dis
+    {
+        font-size: 1rem;
+    }
+    .contact-name
+    {
+        font-size: 1.5rem;
+    }
+    .contact
+    {
+        margin: 0;
+    }
+    header .nav-bar a
+    {
+        font-size: 0.58rem;
+    }
+    }
+  
+  
